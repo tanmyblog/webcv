@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keyword" content="web cv, thiết kế cv, hướng dẫn làm cv">
+	<meta name="description" content="Website cv đơn giản phục vụ cho quá trình học tập được thiết kế bởi hồ tấn mỹ">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Web CV</title>
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+	<!-- Bootstrap css-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Customs css-->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="js/toastr-master/build/toastr.min.css">
+</head>
+<body>
+	<!-- navagation -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+				</button>
+				<a class="navbar-brand" href="index.html"><h1><img src="images/logo.png" alt="logo hồ tấn mỹ"></h1></a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#slide">SLIDE</a></li>
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#skill">SKILLS</a></li>
+					<li><a href="#project">PRODUCTS</a></li>
+					<li><a href="#google-map">GOOGLE MAP</a></li>
+					<li><a href="#contacts">CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav> 
+	<!-- end navagation -->
+	
+	<!-- slide mobile -->
+	<div id="slideshow" class="carousel-mobile">
+		<div>
+				<img class="slide-m" src="images/slide4.jpg" />
+				<img class="slide-m" src="images/slide5.jpg" />
+				<img class="slide-m" src="images/slider6.jpg" />
+		</div>
+
+		<a class="left carousel-control btn-prev" href="#slide-m" role="button" data-slide="btn-prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a class="right carousel-control btn-next" href="#slide-m" role="button" data-slide="btn-next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+
+	<!-- end slide mobile-->
+
+	<!-- slide desktop-->
+	<div id="slide" class="carousel slide carousel-desktop" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#slide" data-slide-to="4" class="active"></li>
+			<li data-target="#slide" data-slide-to="5"></li>
+			<li data-target="#slide" data-slide-to="6"></li>
+		</ol>
+
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="images/slide1.jpg" alt="Slide 4">
+				<div class="carousel-caption">
+				</div>
+			</div>
+			<div class="item">
+				<img src="images/slider2.jpg" alt="Slide 5">
+				<div class="carousel-caption">
+				</div>
+			</div>
+			<div class="item">
+				<img src="images/slider3.jpg" alt="Slide 6">
+				<div class="carousel-caption">
+				</div>
+			</div>
+		</div>
+
+		<a class="left carousel-control" href="#slide" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a class="right carousel-control" href="#slide" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div> 
+	<!-- End Slider desktop -->
+
+	<!-- About -->
+	<div id="about" class="container-fluid bg-grey">
+		<div class="row">
+			<div class="col-sm-4 slideanim">
+				<img src="images/logo.png" width="100%" class="logo-left" alt="logo ho tan my">
+			</div>
+			<div class="col-sm-8 slideanim">
+				<h2>About</h2>
+				<h4><strong>HỒ TẤN MỸ</strong> sinh viên trường Đại Học Công Nghệ TP.HCM, 21 tuổi đang sống và làm việc tại Tp.HCM. Với một ước trở thành nhà phát triển web chuyên nghiệp trong thời gian không xa. </h4>
+				<p>Lập trình đến với tôi như một cơ duyên và khi đó tôi muốn tạo ra các sản phẩm chất lượng, độc đáo nhất cho cộng đồng. Khả năng chịu đựng được áp lực ao từ việc, chịu khó học hỏi sẽ giúp tôi nhanh chóng trở thành một nhà phát triển web trong tương lai</p>
+			</div>
+		</div>
+	</div>
+	<!-- End About -->
+
+	<!-- SKILL -->
+	<div id="skill" class="container-fluid text-center">
+		<h2>skills</h2><br />
+		<div class="row text-center slideanim">
+			<div class="col-sm-7 desktop-chart" align="center">
+				<div class="char-container">
+					<canvas id="myChart" width="100%"></canvas>
+				</div>
+			</div>
+			<div class="col-sm-5 skill-info">
+				<div class="thumnail">
+					<h4><strong>FrontEnd</strong></h4>
+					<p>Sử dụng thành thạo HTML 5 80%, CSS3 50%, Javascript 40%</p>
+				</div>
+				<div class="thumnail">
+					<h4><strong>BackEnd</strong></h4>
+					<p>Sử dụng PHP 40% & ASP.NET 35%</p>
+				</div>
+			</div>
+			<div class="col-sm-12 moblie-chart">
+				<canvas id="Chart" width="300" height="300"></canvas>
+			</div>
+			
+			<div class="col-sm-12 skill-info-mobile">
+				<div class="thumnail">
+					<h4><strong>FrontEnd & BackEnd</strong></h4>
+					<p>Kỹ năng về FontEnd 60% và BackEnd 40%</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End SKILL-->
+
+	<!-- PROJECTS -->
+	<div id="project" class="container-fluid text-center bg-grey">
+		<h2>PRODUCTS</h2><br />
+		<div class="owl-carousel owl-theme">
+			<div class="item">
+				<div class="thumbnail ">
+					<img src="images/webtintuc.png" alt="Đồ án website tin tức" width="400" height="300">
+					<h4><strong>Website Tin Tức</strong></h4>
+					<p>FrontEnd sử dụng HTML5 + CSS3 + Javascript. <br />BackEnd sử dụng PHP</p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="thumbnail">
+					<img src="images/webbanhang.png" alt="Đồ án web bán hàng" width="400" height="300">
+					<h4><strong>Website Bán Hàng</strong></h4>
+					<p>FrontEnd HTML5 + CSS3 + Javascript + BootStrap. <br /> BackEnd sử dụng ASP.NET</p>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<!-- End PROJECTS -->
+
+	<!-- MAP -->
+	<div id="google-map" class="container-fluid text-center">
+		<h2 class="text-center">Google Map</h2>
+		<div class="row slideanim">
+			<div class="col-sm-12">
+				<div id="map">
+					<script>
+						function initMap() {
+							var uluru = {lat: 10.856538, lng: 106.677585};
+							var map = new google.maps.Map(document.getElementById('map'), {
+							zoom: 16,
+							center: uluru
+						});
+						var marker = new google.maps.Marker({
+							position: uluru,
+							map: map ,
+							animation:google.maps.Animation.BOUNCE
+						});
+						var geocoder = new google.maps.Geocoder; // create new geocoder
+						var infowindow = new google.maps.InfoWindow(); // create new infoWindow
+	
+						geocoder.geocode(
+							{ "location": uluru },
+							function(results, status) {
+								if (status === google.maps.GeocoderStatus.OK) {
+									if (results[0]) {
+									// set content for infowindow
+										infowindow.setContent(
+											"<div class='map-custom'>" +	
+											"" + results[0].formatted_address + "<br>" + 
+											"</div>"
+										);
+		
+										// print infowindow in map
+										infowindow.open(map, marker);
+									} else {
+										console.log("No results found");
+									}
+								} else {
+									console.log("Geocoder failed due to: " + status);
+								}
+								}
+							);
+						}
+					</script>
+					<script async defer
+						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAupWgrse_KDEb-muW6_nNgJyN9d2kBqDs&callback=initMap">
+					</script>
+				</div>
+			</div>
+
+		</div>
+		<br /><br />
+	</div>
+	<!-- End MAP -->
+
+	<!-- CONTACT -->
+	<div id="contacts" class="container-fluid bg-grey">
+		<h2 class="text-center">Contact</h2>
+		<div class="row">
+			<div class="col-sm-5">
+				<p><span class="glyphicon glyphicon-user"></span> HỒ TẤN MỸ</p>
+				<p><span class="glyphicon glyphicon-map-marker"></span> 71/50 TL 08 Khu Phố 3A P.Thạnh Lộc Quận 12</p>
+				<p><span class="glyphicon glyphicon-phone"></span> 0964 082 598</p>
+				<p><span class="glyphicon glyphicon-envelope"></span> kd.aigapa@gmail.com</p>
+			</div>
+			<div class="col-sm-7 slideanim">
+				<div class="row">
+					<div class="col-sm-6 form-group">
+						<input class="form-control" name="name" placeholder="Name" type="text" required>
+					</div>
+					<div class="col-sm-6 form-group">
+						<input class="form-control" name="email" placeholder="Email" type="email" required>
+					</div>
+				</div>
+				<textarea class="form-control" name="message" placeholder="Message" rows="5"></textarea><br />
+				<div class="row">
+					<div class="col-sm-12 form-group">
+						<button class="btn btn-default pull-right" type="submit" onclick="create()">Gửi</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End CONTACT -->
+
+	<!-- Footer -->
+	<footer class="container-fluid text-center">
+		<p>&copy; Copyright <a href="https://hotanmy.blogspot.com" title="Tấn Mỹ BLog">Tấn Mỹ BLog</a></p>
+	</footer>
+
+	<div class="backtotop"><span class="glyphicon glyphicon-chevron-up"></span></div>
+	<!-- End Footer -->
+
+	<!-- Get jQuery, BootStrap, Chart -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.slides.js"></script>
+	<script type="text/javascript" src="js/chart.min.js"></script>
+	<script type="text/javascript" src="js/animation.js"></script>
+	<script type="text/javascript" src="js/skill_chart.js"></script>
+	<script type="text/javascript" src="js/mobile-chart.js"></script>
+	<script type="text/javascript" src="js/contact.js"></script>
+	<script type="text/javascript" src="js/backtotop.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/toastr-master/build/toastr.min.js"></script>
+	<script>
+		$('.owl-carousel').owlCarousel({
+			loop:true,
+			
+			margin:10,
+			responsiveClass:true,
+			responsive:{
+				0:{
+					items:1,
+					autoplay:true,
+    				autoplayTimeout:3000,
+					nav:true
+				},
+				600:{
+					items:2,
+					nav:false
+				}
+			}
+		});
+	</script>
+	<script>
+		/*global $,jQuery,console,window*/
+		(function ($) {
+			"use strict";
+			var slideshow = (function () {
+				var counter = 0,
+					i,
+					j,
+					slides =  $("#slideshow .slide-m"),
+					slidesLen = slides.length - 1;
+				for (i = 0, j = 9999; i < slides.length; i += 1, j -= 1) {
+					$(slides[i]).css("z-index", j);
+				}
+				return {
+					startSlideshow: function () {
+						window.setInterval(function () {
+							if (counter === 0) {
+								slides.eq(counter).fadeOut();
+								counter += 1;
+							} else if (counter === slidesLen) {
+								counter = 0;
+								slides.eq(counter).fadeIn(function () {
+									slides.fadeIn();
+								});
+							} else {
+								slides.eq(counter).fadeOut();
+								counter += 1;
+							}
+
+							$('a.btn-next').click(function() {
+								slides.eq(counter).fadeOut();
+								counter += 1;
+							});
+							$('a.btn-prev').click(function() {
+								slides.eq(counter).fadeIn();
+								counter -= 1;
+							});
+
+						}, 2000);
+
+						
+					}
+				};
+			}());
+			slideshow.startSlideshow();
+		}(jQuery));
+	</script>
+	 <script>
+		$(function(){
+			$("#slides").slidesjs({
+			width: 940,
+			height: 528
+			});
+		});
+	</script>
+		
+</body>
+</html>
